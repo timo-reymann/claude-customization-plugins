@@ -33,12 +33,14 @@ Install the plugin with this command.
 claude plugin install concise-output-styles@claude-customization-plugins
 ```
 
-An output style does not turn on by itself. Select it with the `/output-style`
-command, or with the config menu.
+An output style does not turn on by itself. Select it with the `/config`
+command, then pick **Output style** from the menu. You can also set the
+`outputStyle` field in a settings file, for example `"outputStyle": "STE"`.
+A style change takes effect after `/clear`, or in a new session.
 
 The plugin also has a setup skill, `concise-output-styles-setup`. Ask Claude
 to set up a style, and it will guide you through the install and the
-`/output-style` selection step.
+`/config` selection step.
 
 ### comment-style-hook
 

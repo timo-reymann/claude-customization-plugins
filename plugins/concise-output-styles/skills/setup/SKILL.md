@@ -15,15 +15,18 @@ Use this skill to help the user turn on an output style from the
 2. If the plugin is not in the list, tell the user to add the marketplace and
    install the plugin.
    ```
-   claude plugin marketplace add /Users/phpe/workspace/claude-customization-plugins
+   claude plugin marketplace add timo-reymann/claude-customization-plugins
    claude plugin install concise-output-styles@claude-customization-plugins
    ```
 3. Ask the user which style they want: `STE` for ASD-STE100 Simplified
    Technical English, or `ELI5` for simple, everyday language.
-4. Tell the user to select the style. They can run the `/output-style`
-   command and pick it from the list, or set it in a settings file with
-   `"outputStyle": "STE"` or `"outputStyle": "ELI5"`.
-5. Confirm the style is active. Ask the user to check that new prose replies
+4. Tell the user to select the style. They can run the `/config` command,
+   pick **Output style** from the menu, and pick the style. Or they can set
+   it in a settings file with `"outputStyle": "STE"` or `"outputStyle":
+   "ELI5"`.
+5. Tell the user a style change takes effect after `/clear`, or in a new
+   session.
+6. Confirm the style is active. Ask the user to check that new prose replies
    match the style rules.
 
 ## Notes
