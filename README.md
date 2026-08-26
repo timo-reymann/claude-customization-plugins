@@ -2,6 +2,20 @@
 
 A marketplace of Claude Code plugins that add output styles and hooks.
 
+## Quick setup
+
+Run this one-liner for an interactive setup. It adds the marketplace, asks
+whether you want a concise output style (and which one), asks whether you
+want the comment-style hook, and installs what you pick.
+
+```
+bash <(curl -fsSL https://raw.githubusercontent.com/timo-reymann/claude-customization-plugins/main/setup.sh)
+```
+
+The script bundles [bash-tui-toolkit](https://github.com/timo-reymann/bash-tui-toolkit)
+for its prompts, so it has no extra dependencies beyond `bash` and the
+`claude` CLI.
+
 ## Add the marketplace
 
 Run this command.
