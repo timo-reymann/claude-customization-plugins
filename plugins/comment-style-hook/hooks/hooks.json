@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Look at the code comments in the added or changed text below. A good comment states a hidden fact: a constraint, a workaround, or behavior that would surprise a reader. A bad comment restates what the code already shows, or spans more than one or two lines. Set ok to false only if you find a bad comment, and name the file and the comment text in the reason. Input: $ARGUMENTS",
+            "continueOnBlock": true,
+            "statusMessage": "Checking comment style..."
+          }
+        ]
+      }
+    ]
+  }
+}

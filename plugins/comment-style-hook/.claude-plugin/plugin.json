@@ -1,0 +1,8 @@
+{
+  "name": "comment-style-hook",
+  "description": "PostToolUse hook that checks the comment style of added or changed code.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Timo Reymann"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "concise-output-styles",
+  "description": "A set of concise output styles, such as ASD-STE100 Simplified Technical English and ELI5.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Timo Reymann"
+  }
+}

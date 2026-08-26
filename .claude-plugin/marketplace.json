@@ -1,0 +1,18 @@
+{
+  "name": "claude-customization-plugins",
+  "owner": {
+    "name": "Timo Reymann"
+  },
+  "plugins": [
+    {
+      "name": "concise-output-styles",
+      "source": "./plugins/concise-output-styles",
+      "description": "A set of concise output styles, such as ASD-STE100 Simplified Technical English and ELI5."
+    },
+    {
+      "name": "comment-style-hook",
+      "source": "./plugins/comment-style-hook",
+      "description": "PostToolUse hook that checks the comment style of added or changed code."
+    }
+  ]
+}
