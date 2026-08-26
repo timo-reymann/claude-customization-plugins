@@ -54,3 +54,7 @@ claude plugin install comment-style-hook@claude-customization-plugins
 
 The hook turns on as soon as you install the plugin. It runs on every `Write`
 or `Edit` tool call, with no extra step from you.
+
+## License
+
+This repo uses the Unlicense. See the [LICENSE](LICENSE) file.
