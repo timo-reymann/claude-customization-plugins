@@ -13,6 +13,11 @@
       "name": "comment-style-hook",
       "source": "./plugins/comment-style-hook",
       "description": "PostToolUse hook that checks the comment style of added or changed code."
+    },
+    {
+      "name": "markdown-line-length-hook",
+      "source": "./plugins/markdown-line-length-hook",
+      "description": "PostToolUse hook that keeps generated Markdown at a maximum line length of 118 characters."
     }
   ]
 }

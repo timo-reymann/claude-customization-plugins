@@ -1,0 +1,8 @@
+{
+  "name": "markdown-line-length-hook",
+  "description": "PostToolUse hook that keeps generated Markdown at a maximum line length of 118 characters.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Timo Reymann"
+  }
+}

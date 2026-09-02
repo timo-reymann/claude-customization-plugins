@@ -447,4 +447,11 @@ if [ "$want_hook" = "1" ]; then
     show_success "Installed comment-style-hook. It runs on every Write/Edit tool call."
 fi
 
+want_md_hook=$(confirm "Enable the markdown-line-length-hook plugin (wraps generated Markdown at 118 characters)?")
+if [ "$want_md_hook" = "1" ]; then
+    log "$LOG_INFO" "Installing markdown-line-length-hook"
+    claude plugin install "markdown-line-length-hook@${MARKETPLACE}"
+    show_success "Installed markdown-line-length-hook. It runs on every Write/Edit tool call on a Markdown file."
+fi
+
 show_success "Setup complete."

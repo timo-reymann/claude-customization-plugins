@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Check the line length of Markdown text that you wrote. Set ok to true at once if the file path does not end in .md, .mdx or .markdown.\n\nThe target is a maximum of 118 characters per line. Break each long line at a smooth point: after a sentence, at a comma, or before a conjunction. Do not break a line in the middle of a phrase, and do not pad a short line to reach the limit.\n\nKeep the existing structure. Set ok to true if one of these is true:\n- The file already uses longer lines, or one line per paragraph. The existing convention wins.\n- A formatter or a linter config, such as .prettierrc, .markdownlint.json or .editorconfig, sets a different line length. That config wins.\n- The long line is a table row, a code block line, a link, a URL, front matter, or an HTML block. A break there changes the render.\n\nSet ok to false only for prose or list text that you added, that is longer than 118 characters, and that the rules above do not protect. Name the file and the first long line in the reason. Input: $ARGUMENTS",
+            "continueOnBlock": true,
+            "statusMessage": "Checking Markdown line length..."
+          }
+        ]
+      }
+    ]
+  }
+}
