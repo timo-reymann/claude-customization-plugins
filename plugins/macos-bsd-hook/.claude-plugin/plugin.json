@@ -1,0 +1,8 @@
+{
+  "name": "macos-bsd-hook",
+  "description": "PreToolUse hook that blocks GNU-only grep and sed syntax on macOS and points Claude to a working form.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Timo Reymann"
+  }
+}

@@ -92,6 +92,26 @@ claude plugin install markdown-line-length-hook@claude-customization-plugins
 
 The hook turns on as soon as you install the plugin.
 
+### macos-bsd-hook
+
+This plugin adds a `PreToolUse` hook for the `Bash` tool. It works on macOS only. The system `grep` and `sed` on
+macOS are BSD tools, and they reject some GNU syntax. Claude then often reports a syntax error and writes a Python
+script.
+
+The hook denies these forms and tells Claude a working form:
+
+- `grep -P` and `grep --perl-regexp`. Claude must use `rg`, `ggrep -P` or the Grep tool.
+- A grep pattern with a lookaround, such as `(?=`, `(?!`, `(?<=` or `(?<!`.
+- `sed -i` with no backup suffix. Claude must use the Edit tool, `sed -i ''` or `gsed -i`.
+
+The hook needs `jq`. It does nothing on other systems, or if `jq` is missing.
+
+Install the plugin with this command.
+
+```
+claude plugin install macos-bsd-hook@claude-customization-plugins
+```
+
 ## License
 
 This repo uses the Unlicense. See the [LICENSE](LICENSE) file.
