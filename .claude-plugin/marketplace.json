@@ -18,6 +18,11 @@
       "name": "markdown-line-length-hook",
       "source": "./plugins/markdown-line-length-hook",
       "description": "PostToolUse hook that keeps generated Markdown at a maximum line length of 118 characters."
+    },
+    {
+      "name": "macos-bsd-hook",
+      "source": "./plugins/macos-bsd-hook",
+      "description": "PreToolUse hook that blocks GNU-only grep and sed syntax on macOS and points Claude to a working form."
     }
   ]
 }
