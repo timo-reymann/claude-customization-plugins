@@ -455,7 +455,7 @@ if [ "$want_md_hook" = "1" ]; then
 fi
 
 want_bsd_hook=$(confirm "Enable the macos-bsd-hook plugin (blocks grep -P and sed -i, which fail on macOS)?")
-if [ "$want_bsd_hook" = "1" ]; then
+if [[ "$want_bsd_hook" == "1" ]]; then
     log "$LOG_INFO" "Installing macos-bsd-hook"
     claude plugin install "macos-bsd-hook@${MARKETPLACE}"
     show_success "Installed macos-bsd-hook. It runs on every Bash tool call."
