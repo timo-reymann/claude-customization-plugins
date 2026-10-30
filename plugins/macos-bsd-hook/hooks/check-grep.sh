@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Deny GNU-only grep and sed syntax on macOS, where the system tools are BSD (no grep -P, no sed -i without suffix).
 
-[ "$(uname -s)" = "Darwin" ] || exit 0
+[[ "$(uname -s)" == "Darwin" ]] || exit 0
 command -v jq >/dev/null 2>&1 || exit 0
 
 cmd=$(jq -r '.tool_input.command // empty')
-[ -n "$cmd" ] || exit 0
+[[ -n "$cmd" ]] || exit 0
 
 # "grep" must start a word, so egrep and ggrep do not match. The [^|;&]* part stops at a pipe or a list separator.
 start='(^|[|;&(`[:space:]]|/)grep'
